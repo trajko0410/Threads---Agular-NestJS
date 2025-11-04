@@ -1,0 +1,12 @@
+GET http://localhost:3000/comments HTTP/1.1
+
+GET http://localhost:3000/comments?parentId=69092d13c0a8db2a11549bb8 HTTP/1.1
+
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+    "text": "Nested komentar",
+    "userId": "6908e9d83140b0f1f69319a1",
+    "parentId": "69092d13c0a8db2a11549bb8"
+}
